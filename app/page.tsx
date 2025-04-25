@@ -118,30 +118,6 @@ export default function HomePage() {
     }
   ];
 
-  const blogPosts = [
-    {
-      title: "Building Scalable Cloud Infrastructure with AWS",
-      description: "Deep dive into architecting cloud-native solutions using AWS services, focusing on scalability and cost optimization.",
-      date: "Coming Soon",
-      tags: ["AWS", "Cloud Architecture", "DevOps"],
-      readTime: "15 min read"
-    },
-    {
-      title: "Kubernetes Best Practices for Enterprise",
-      description: "Comprehensive guide to implementing Kubernetes in enterprise environments with focus on security and scalability.",
-      date: "Coming Soon",
-      tags: ["Kubernetes", "DevOps", "Container Orchestration"],
-      readTime: "12 min read"
-    },
-    {
-      title: "Modern Developer Platforms with Backstage",
-      description: "How to build and scale developer platforms using Spotify Backstage, including custom plugins and integrations.",
-      date: "Coming Soon",
-      tags: ["Backstage", "Developer Experience", "Platform Engineering"],
-      readTime: "10 min read"
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       {/* Header with navigation */}
