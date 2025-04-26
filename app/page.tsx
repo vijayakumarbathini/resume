@@ -1,5 +1,6 @@
 import { GitHubIcon, LinkedInIcon } from './components/icons'
 import { Button } from './components/ui/button'
+import Todo from './components/Todo'
 
 export default function Home() {
   return (
@@ -117,6 +118,10 @@ export default function Home() {
       <footer className="text-center text-sm text-muted-foreground">
         © 2024 Vijaya Kumar Bathini. All rights reserved.
       </footer>
+
+      <div className="container mx-auto px-4 py-8">
+        <Todo />
+      </div>
     </main>
   )
 }
