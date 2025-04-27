@@ -14,7 +14,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   experimental: {
-    optimizeDeps: true,
+    typedRoutes: true,
   },
 }
 

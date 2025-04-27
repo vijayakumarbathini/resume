@@ -51,8 +51,12 @@ jobs:
         run: |
           npm install
           npm install -D typescript@5.4.2 @types/node@20.11.25 @types/react@18.2.64 @types/react-dom@18.2.21
-          npm ls typescript @types/node || true
 
+      - name: Verify TypeScript installation
+        run: |
+          npm list typescript @types/node || true
+          node -e "console.log(require('typescript/package.json').version)"
+          
       - name: Build with Next.js
         run: npm run build
         env:
