@@ -116,7 +116,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-center text-sm text-muted-foreground">
-        © 2024 Vijaya Kumar Bathini. All rights reserved.
+        © 2025 Vijaya Kumar Bathini. All rights reserved.
       </footer>
 
       <div className="container mx-auto px-4 py-8">
