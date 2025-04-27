@@ -48,13 +48,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm ci
-          npm install -D typescript@5.4.2 @types/node@20.11.25 @types/react@18.2.64 @types/react-dom@18.2.21
+          npm install
+          npm install -D typescript@5.4.2 @types/node@20.11.25 @types/react@18.2.64 @types/react-dom@18.2.21 @types/scheduler@0.26.0
+          npm install
 
       - name: Verify dependencies
         run: |
           npm list typescript || true
           npm list @types/node || true
+          npm list @types/react || true
+          npm list @types/react-dom || true
 
       - name: Build with Next.js
         run: |
