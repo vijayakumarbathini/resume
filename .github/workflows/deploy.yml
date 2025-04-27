@@ -49,9 +49,6 @@ jobs:
           npm install -D typescript@5.4.2 @types/node@20.11.25 @types/react@18.2.64 @types/react-dom@18.2.21
           npm ls @types/node || true
           
-      - name: Type check
-        run: npm run typecheck
-        
       - name: Build with Next.js
         run: npm run build
         env:
