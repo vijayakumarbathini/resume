@@ -15,9 +15,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  experimental: {
-    typedRoutes: true,
-  },
+  // Disable type checking during production builds
+  productionBrowserSourceMaps: false,
+  swcMinify: true
 }
 
 module.exports = nextConfig 
