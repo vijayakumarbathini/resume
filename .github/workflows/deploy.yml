@@ -47,18 +47,20 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install dependencies
-        if: steps.npm-cache.outputs.cache-hit != 'true'
         run: |
+          rm -rf node_modules
           npm install
           npm install -D typescript@5.4.2 @types/node@20.11.25 @types/react@18.2.64 @types/react-dom@18.2.21
 
-      - name: Verify TypeScript installation
+      - name: Verify TypeScript
         run: |
-          npx tsc --version
+          ./node_modules/.bin/tsc --version
           npm list typescript @types/node || true
           
       - name: Build with Next.js
-        run: npm run build
+        run: |
+          ./node_modules/.bin/tsc --noEmit
+          npm run build
         env:
           NODE_ENV: production
           NEXT_TELEMETRY_DISABLED: 1
